@@ -10,7 +10,7 @@ namespace Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.sort array");
+                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.Insersion sort\n5.Bubble Sort");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -29,6 +29,10 @@ namespace Algorithm
                     case 4:
                         InsersionSort sort = new InsersionSort();
                         sort.Sort();
+                        break;
+                    case 5:
+                        BubbleSort bubbleSort = new BubbleSort();
+                        bubbleSort.Sort();
                         break;
                     default:
                         flag = false;
