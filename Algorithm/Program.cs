@@ -10,7 +10,7 @@ namespace Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace");
+                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.sort array");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -25,6 +25,10 @@ namespace Algorithm
                     case 3:
                         StringReplace stringReplace = new StringReplace();
                         stringReplace.ReplaceString();
+                        break;
+                    case 4:
+                        InsersionSort sort = new InsersionSort();
+                        sort.Sort();
                         break;
                     default:
                         flag = false;
