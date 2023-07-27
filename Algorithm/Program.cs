@@ -10,7 +10,7 @@ namespace Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.Insersion sort\n5.Bubble Sort");
+                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.Insersion sort\n5.Bubble Sort\n6.Prime number from 0 - 1000");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -34,6 +34,11 @@ namespace Algorithm
                         BubbleSort bubbleSort = new BubbleSort();
                         bubbleSort.Sort();
                         break;
+                    case 6:
+                        PrimeNumbers primeNumbers = new PrimeNumbers();
+                        primeNumbers.GetPrimeNumbers();
+                        break;
+
                     default:
                         flag = false;
                         break;

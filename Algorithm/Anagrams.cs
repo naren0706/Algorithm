@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 //3,4,{5},7,8
-//2,3,4,6
+//2,3,4,6,7
 
 namespace Algorithm
 {
