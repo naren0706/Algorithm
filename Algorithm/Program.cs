@@ -10,7 +10,7 @@ namespace Algorithm
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.Insersion sort\n5.Bubble Sort\n6.Prime number from 0 - 1000");
+                Console.WriteLine("1.binary Search\n2.Anagram\n3.String Replace\n4.Insersion sort\n5.Bubble Sort\n6.Prime number from 0 - 1000\n7.PrimeNumber Anagram and palindrom");
                 int input = Convert.ToInt32(Console.ReadLine());
                 switch (input)
                 {
@@ -38,7 +38,11 @@ namespace Algorithm
                         PrimeNumbers primeNumbers = new PrimeNumbers();
                         primeNumbers.GetPrimeNumbers();
                         break;
-
+                    case 7:
+                        PrimeNumbers primeNumbers1 = new PrimeNumbers();
+                        primeNumbers1.GetPrimeNumbers();
+                        primeNumbers1.IsPrimeAnagramAndPalindrom();
+                        break;
                     default:
                         flag = false;
                         break;

@@ -24,7 +24,6 @@ namespace Algorithm
                     words[j + 1] = words[j];
                     j--;
                 }
-
                 words[j + 1] = key;
             }
             foreach (string word in words)
